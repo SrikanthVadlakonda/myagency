@@ -199,6 +199,114 @@ background-color: white;
 
 
 
+.scroll {
+    height: 250px;
+    width: 100%;
+    overflow: hidden; 
+    display: flex;
+margin-top: 100px;
+margin-bottom: 100px;
+}
+
+.scroll-container {
+    display: flex;
+    animation: scroll 20s linear infinite; 
+}
+.scroll-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+.scroll-box1 {
+    height: 210px;
+    width: 31%;
+    border: 0.3px solid rgb(141, 139, 139);
+    border-radius: 15px;
+    padding: 15px;
+    flex-shrink: 0; 
+    margin-right: 20px; 
+}
+
+.box1 {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+}
+
+
+.box1Aa {
+    height: 130px;
+    width: 32%;
+    background-image: url(images/images1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box1Ab {
+    height: 130px;
+    width: 32%;
+    background-image: url(images/images2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box1Ac {
+    height: 130px;
+    width: 32%;
+    background-image: url(images/images3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box1Ad {
+    height: 130px;
+    width: 32%;
+    background-image: url(images/images4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box1Ae {
+    height: 130px;
+    width: 32%;
+    background-image: url(images/images5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box1B {
+    height: 130px;
+    width: 65%;
+}
+
+.box1B p {
+    font-size: 25px;
+    color: rgb(87, 86, 86);
+}
+
+.box1C {
+    height: 100px;
+    width: 100%;
+}
+
+.box2 p {
+    font-size: 17px;
+    color: gray;
+    font-weight: 300;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
 .cards1{
     height: 300px;
     width: 1250px;
@@ -330,15 +438,19 @@ row-gap: 20px;
     display: flex;
     column-gap: 10px;
     padding: 10px 10px;
-    border: 0.5px solid gray;
+    border: 0.5px solid rgb(160, 159, 159);
     border-radius: 15px;
     align-items: center;
 
 }
+.button:hover{
+    border: 0.5px solid rgb(17, 17, 17);
+
+}
 .button a{
 text-decoration: none;
-color: black;
-font-size: 18px;
+color: rgb(99, 98, 98);
+font-size: 17px;
 font-weight: 500;
 }
 
